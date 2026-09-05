@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — Kesar Botanicals</title>
+<meta name="description" content="Secure checkout for your handcrafted saffron botanical soap order.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23C98A2B'/><path d='M16 24c0-6 2-10 8-13-1 7-3 11-8 13zm0 0c0-6-2-10-8-13 1 7 3 11 8 13z' fill='%23FBF7F0'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/checkout.css">
+</head>
+<body class="checkout-body">
+
+<!-- ============ ANNOUNCEMENT ============ -->
+<div class="announce">Handcrafted in small batches · Free delivery on orders over ৳1,000</div>
+
+<!-- ============ SLIM NAV ============ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Kesar Botanicals home">
+      <svg viewBox="0 0 32 32" class="nav__logo-mark" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--saffron)"/><path d="M16 24c0-6 2-10 8-13-1 7-3 11-8 13zm0 0c0-6-2-10-8-13 1 7 3 11 8 13z" fill="var(--ivory)"/></svg>
+      <span>Kesar<em> Botanicals</em></span>
+    </a>
+
+    <ol class="co-steps" aria-label="Checkout progress">
+      <li class="is-done"><span>1</span>Cart</li>
+      <li class="is-active"><span>2</span>Details</li>
+      <li><span>3</span>Confirmation</li>
+    </ol>
+
+    <div class="nav__actions">
+      <span class="co-secure">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="10" width="14" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+        Secure Checkout
+      </span>
+    </div>
+  </div>
+</header>
+
+<main class="co-main">
+  <div class="container">
+
+    <!-- ============ CHECKOUT LAYOUT ============ -->
+    <div class="co-grid" id="coGrid">
+
+      <!-- LEFT · FORM -->
+      <section class="co-form-wrap" aria-label="Delivery details">
+        <a class="co-back" href="index.html">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg>
+          Continue shopping
+        </a>
+
+        <h1 class="co-title">Checkout</h1>
+        <p class="co-sub">Almost there — tell us where to send your handcrafted bar.</p>
+
+        <form id="coForm" class="co-form" novalidate>
+
+          <!-- Contact -->
+          <fieldset class="co-fieldset">
+            <legend>Contact</legend>
+            <div class="co-field">
+              <label for="fName">Full name <i>*</i></label>
+              <input type="text" id="fName" name="name" placeholder="Your full name" autocomplete="name" required>
+              <span class="co-err">Please enter your name.</span>
+            </div>
+            <div class="co-row">
+              <div class="co-field">
+                <label for="fPhone">Phone <i>*</i></label>
+                <input type="tel" id="fPhone" name="phone" placeholder="01XXXXXXXXX" autocomplete="tel" required>
+                <span class="co-err">Please enter a valid phone number.</span>
+              </div>
+              <div class="co-field">
+                <label for="fEmail">Email <em>(optional)</em></label>
+                <input type="email" id="fEmail" name="email" placeholder="you@example.com" autocomplete="email">
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Delivery address -->
+          <fieldset class="co-fieldset">
+            <legend>Delivery address</legend>
+            <div class="co-field">
+              <label for="fAddress">Street address <i>*</i></label>
+              <input type="text" id="fAddress" name="address" placeholder="House, road, area" autocomplete="street-address" required>
+              <span class="co-err">Please enter your delivery address.</span>
+            </div>
+            <div class="co-row">
+              <div class="co-field">
+                <label for="fCity">City <i>*</i></label>
+                <select id="fCity" name="city" required>
+                  <option value="">Select city</option>
+                  <option>Dhaka</option>
+                  <option>Chattogram</option>
+                  <option>Sylhet</option>
+                  <option>Khulna</option>
+                  <option>Rajshahi</option>
+                  <option>Other</option>
+                </select>
+                <span class="co-err">Please select your city.</span>
+              </div>
+              <div class="co-field">
+                <label for="fPostcode">Postcode <em>(optional)</em></label>
+                <input type="text" id="fPostcode" name="postcode" placeholder="1200" inputmode="numeric">
+              </div>
+            </div>
+            <div class="co-field">
+              <label for="fNotes">Delivery notes <em>(optional)</em></label>
+              <textarea id="fNotes" name="notes" rows="2" placeholder="Any instructions for our delivery partner"></textarea>
+            </div>
+          </fieldset>
+
+          <!-- Payment -->
+          <fieldset class="co-fieldset">
+            <legend>Payment method</legend>
+            <div class="co-pay" role="radiogroup" aria-label="Payment method">
+              <label class="co-pay__opt">
+                <input type="radio" name="payment" value="Cash on Delivery" checked>
+                <span class="co-pay__card">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="13" rx="2"/><circle cx="12" cy="12.5" r="3"/><path d="M9 9.5h.01M15 15.5h.01"/></svg>
+                  <strong>Cash on Delivery</strong>
+                  <small>Pay when your order arrives</small>
+                </span>
+              </label>
+              <label class="co-pay__opt">
+                <input type="radio" name="payment" value="bKash">
+                <span class="co-pay__card">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M12 8v8M8.5 12h7"/></svg>
+                  <strong>bKash</strong>
+                  <span class="co-pay__tag">Mobile wallet</span>
+                </span>
+              </label>
+              <label class="co-pay__opt">
+                <input type="radio" name="payment" value="Nagad">
+                <span class="co-pay__card">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 4h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M12 8v8M8.5 12h7"/></svg>
+                  <strong>Nagad</strong>
+                  <span class="co-pay__tag">Mobile wallet</span>
+                </span>
+              </label>
+              <label class="co-pay__opt">
+                <input type="radio" name="payment" value="Card on Delivery">
+                <span class="co-pay__card">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>
+                  <strong>Card on Delivery</strong>
+                  <span class="co-pay__tag">POS at doorstep</span>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="btn btn--primary btn--lg co-submit">
+            Place Order — <span id="coBtnTotal">৳450</span>
+          </button>
+
+          <p class="co-safe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+            Your information is only used to deliver your order.
+          </p>
+        </form>
+      </section>
+
+      <!-- RIGHT · ORDER SUMMARY -->
+      <aside class="co-summary" aria-label="Order summary">
+        <h2>Order Summary</h2>
+
+        <div class="co-item">
+          <div class="co-item__img">
+            <img src="Images-jpg/Images/ezgif-frame-280.jpg" alt="Handcrafted Saffron Botanical Soap">
+            <span class="co-item__qty" id="coQtyBadge">1</span>
+          </div>
+          <div class="co-item__info">
+            <strong>Handcrafted Saffron Botanical Soap</strong>
+            <span>Small batch · approx. 100g</span>
+            <div class="co-item__qty-ctl" role="group" aria-label="Quantity">
+              <button type="button" id="coMinus" aria-label="Decrease quantity">−</button>
+              <span id="coQty">1</span>
+              <button type="button" id="coPlus" aria-label="Increase quantity">+</button>
+            </div>
+          </div>
+          <div class="co-item__price" id="coLineTotal">৳450</div>
+        </div>
+
+        <dl class="co-totals">
+          <div><dt>Subtotal</dt><dd id="coSubtotal">৳450</dd></div>
+          <div><dt>Delivery</dt><dd id="coDelivery">৳60</dd></div>
+          <div class="co-totals__free" id="coFreeNote" hidden>Free delivery unlocked 🌿</div>
+          <div class="co-totals__grand"><dt>Total</dt><dd id="coTotal">৳510</dd></div>
+        </dl>
+
+        <ul class="co-assure">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Secure checkout</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Carefully packed</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Replacement if damaged</li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- ============ SUCCESS STATE ============ -->
+    <section class="co-success" id="coSuccess" hidden>
+      <div class="co-success__check">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+      </div>
+      <p class="eyebrow">Order Confirmed</p>
+      <h2 class="co-success__title">Thank you — your ritual is on its way.</h2>
+      <p class="co-success__sub">
+        Order <strong id="coOrderId">KB-000000</strong> · <span id="coOrderPay">Cash on Delivery</span><br>
+        We'll call you shortly to confirm delivery. Expected arrival in 2–4 days.
+      </p>
+      <div class="co-success__cta">
+        <a href="index.html" class="btn btn--primary">Continue Shopping</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============ SLIM FOOTER ============ -->
+<footer class="co-footer">
+  <div class="container co-footer__inner">
+    <p>© 2026 Kesar Botanicals · Handcrafted with care in Bangladesh</p>
+    <div class="co-footer__links">
+      <a href="index.html">Home</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/checkout.js"></script>
+</body>
+</html>

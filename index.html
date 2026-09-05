@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kesar Botanicals — Handcrafted Saffron Botanical Soap</title>
+<meta name="description" content="Handcrafted saffron botanical soap, made in small batches with carefully selected natural ingredients. Nature, crafted into every bar.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23C98A2B'/><path d='M16 24c0-6 2-10 8-13-1 7-3 11-8 13zm0 0c0-6-2-10-8-13 1 7 3 11 8 13z' fill='%23FBF7F0'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce">Handcrafted in small batches · Free delivery on orders over ৳1,000</div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#hero" class="nav__logo" aria-label="Kesar Botanicals home">
+      <svg viewBox="0 0 32 32" class="nav__logo-mark" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--saffron)"/><path d="M16 24c0-6 2-10 8-13-1 7-3 11-8 13zm0 0c0-6-2-10-8-13 1 7 3 11 8 13z" fill="var(--ivory)"/></svg>
+      <span>Kesar<em> Botanicals</em></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#shop">Shop</a>
+      <a href="#story">Our Story</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#craft">Our Craft</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <button class="icon-btn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" id="cartBtn" aria-label="Cart">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 7h12l-1.2 12.2a1.8 1.8 0 0 1-1.8 1.6H9a1.8 1.8 0 0 1-1.8-1.6L6 7z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <a href="#shop" class="btn btn--primary btn--sm nav__cta">Shop Now</a>
+      <button class="icon-btn nav__burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ 01 · HERO ============ -->
+<section class="hero" id="hero">
+  <div class="container hero__grid">
+    <div class="hero__content">
+      <p class="eyebrow reveal">Handcrafted Botanical Soap</p>
+      <h1 class="hero__title reveal d1">Nature, Crafted <em>Into Every Bar.</em></h1>
+      <p class="hero__sub reveal d2">Handcrafted with carefully selected botanical ingredients for a beautifully simple cleansing ritual.</p>
+      <div class="hero__cta reveal d3">
+        <a href="#shop" class="btn btn--primary">Shop the Soap</a>
+        <a href="#story" class="btn btn--ghost">Discover Our Story</a>
+      </div>
+      <p class="hero__trust reveal d4">
+        <span>Handcrafted</span><i>•</i><span>Small Batch</span><i>•</i><span>Botanical Inspired</span>
+      </p>
+    </div>
+
+    <div class="hero__visual reveal d2">
+      <div class="hero__frame" data-parallax="0.05">
+        <img src="Images-jpg/Images/ezgif-frame-300.jpg" alt="Handcrafted saffron botanical soap resting on a marble dish, styled with saffron threads, natural oils and white blossoms" fetchpriority="high">
+      </div>
+      <div class="hero__badge" data-parallax="0.12">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4L7.5 16.8l.9-5L4.8 8.3l5-.7L12 3z"/></svg>
+        <div><strong>Small Batch</strong><span>Handcrafted with care</span></div>
+      </div>
+      <svg class="hero__leaf" viewBox="0 0 120 120" aria-hidden="true"><path d="M60 110C60 70 75 40 110 20c5 40-15 75-50 90z" fill="none" stroke="var(--green)" stroke-width="1.4" opacity=".55"/><path d="M60 110C60 75 50 45 20 28" fill="none" stroke="var(--green)" stroke-width="1.2" opacity=".4"/></svg>
+    </div>
+  </div>
+  <a href="#promise" class="hero__scroll" aria-label="Scroll to content"><span></span></a>
+</section>
+
+<!-- ============ 02 · TRUST / BRAND PROMISE ============ -->
+<section class="promise" id="promise">
+  <div class="container">
+    <ul class="promise__grid">
+      <li class="promise__item reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 11V7a5 5 0 0 1 10 0v4"/><path d="M5 11h14l-1 9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2l-1-9z"/><path d="M9.5 15.5l1.8 1.8 3.4-3.6"/></svg>
+        <h3>Handcrafted in Small Batches</h3>
+      </li>
+      <li class="promise__item reveal d1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21c0-7 2.5-11 9-14-1.5 9-4.5 13-9 14z"/><path d="M12 21C12 15 9.5 11 3 8c1.5 8 4.5 12 9 13z"/></svg>
+        <h3>Carefully Selected Ingredients</h3>
+      </li>
+      <li class="promise__item reveal d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 20s-7-4.3-9-8.5C1.5 8 3.5 5 6.5 5c2 0 3.7 1.2 5.5 3.4C13.8 6.2 15.5 5 17.5 5c3 0 5 3 3.5 6.5-2 4.2-9 8.5-9 8.5z"/></svg>
+        <h3>Thoughtfully Made</h3>
+      </li>
+      <li class="promise__item reveal d3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4L7.5 16.8l.9-5L4.8 8.3l5-.7L12 3z"/></svg>
+        <h3>Premium Quality</h3>
+      </li>
+      <li class="promise__item reveal d4">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 14c2-6 6-9 8-9s6 3 8 9"/><path d="M4 14c0 3.3 3.6 6 8 6s8-2.7 8-6"/><path d="M12 5v15"/></svg>
+        <h3>Simple Everyday Care</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 03 · PRODUCT STORY ============ -->
+<section class="story section" id="story">
+  <div class="container story__grid">
+    <div class="story__visual reveal">
+      <div class="frame frame--arch" data-parallax="0.04">
+        <img src="Images-jpg/Images/ezgif-frame-199.jpg" alt="Hands holding the handcrafted saffron soap above a marble dish" loading="lazy">
+      </div>
+      <div class="story__chip">Every bar, shaped by hand</div>
+    </div>
+    <div class="story__content">
+      <p class="eyebrow reveal">Our Philosophy</p>
+      <h2 class="h2 reveal d1">More Than Soap. <em>A Ritual.</em></h2>
+      <p class="lead reveal d2">Each bar is thoughtfully crafted in small batches, allowing the natural character of the ingredients and the handcrafted process to shine through.</p>
+      <p class="body reveal d3">We believe everyday care should feel unhurried. From the first pour to the final wrap, every step is done with intention — so what reaches your hands is honest, warm and quietly beautiful.</p>
+      <a href="#craft" class="btn btn--ghost reveal d4">Explore Our Craft</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 · INGREDIENTS ============ -->
+<section class="ingredients section section--cream" id="ingredients">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">Inside Every Bar</p>
+      <h2 class="h2 reveal d1">Crafted From Carefully <em>Chosen Ingredients</em></h2>
+      <p class="section-head__sub reveal d2">A short, honest list — selected for the formulation and nothing more.</p>
+    </div>
+
+    <div class="ing-grid">
+      <article class="ing-card reveal">
+        <div class="ing-card__img"><img src="Images-jpg/Images/ezgif-frame-150.jpg" alt="Bowl of deep red saffron threads" style="object-position:14% 80%" loading="lazy"></div>
+        <div class="ing-card__body">
+          <h3>Saffron</h3>
+          <p>Treasured threads, traditionally valued for their rich golden character and warm natural hue.</p>
+          <p class="ing-card__why"><span>Why it's here</span>Selected for the formulation to give each bar its signature saffron-golden character.</p>
+        </div>
+      </article>
+
+      <article class="ing-card reveal d1">
+        <div class="ing-card__img"><img src="Images-jpg/Images/ezgif-frame-100.jpg" alt="Bottles of golden natural oils" style="object-position:24% 42%" loading="lazy"></div>
+        <div class="ing-card__body">
+          <h3>Natural Oils</h3>
+          <p>Golden oils pressed from plants, chosen for their natural character and gentle cleansing base.</p>
+          <p class="ing-card__why"><span>Why it's here</span>They form the heart of the bar — the foundation of every handcrafted batch.</p>
+        </div>
+      </article>
+
+      <article class="ing-card reveal d2">
+        <div class="ing-card__img"><img src="Images-jpg/Images/ezgif-frame-100.jpg" alt="Jars of finely milled botanical powders" style="object-position:86% 42%" loading="lazy"></div>
+        <div class="ing-card__body">
+          <h3>Botanical Extracts</h3>
+          <p>Finely milled botanicals and plant-based ingredients, each chosen for its natural character.</p>
+          <p class="ing-card__why"><span>Why it's here</span>Included to bring subtle colour, texture and botanical depth to the formulation.</p>
+        </div>
+      </article>
+
+      <article class="ing-card reveal d3">
+        <div class="ing-card__img"><img src="Images-jpg/Images/ezgif-frame-150.jpg" alt="Delicate white jasmine blossoms" style="object-position:82% 88%" loading="lazy"></div>
+        <div class="ing-card__body">
+          <h3>Plant-Based Ingredients</h3>
+          <p>Gentle, plant-derived components that complete the bar — nothing unnecessary added.</p>
+          <p class="ing-card__why"><span>Why it's here</span>Chosen to keep the formula simple, honest and kind to everyday routines.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 · WHY HANDMADE ============ -->
+<section class="why section" id="why">
+  <div class="container why__grid">
+    <div class="why__content">
+      <p class="eyebrow reveal">The Handmade Difference</p>
+      <h2 class="h2 reveal d1">Why Choose <em>Handmade?</em></h2>
+      <p class="lead reveal d2">Mass-produced bars are made by machines at speed. Ours are made by hands, in small batches, with time to spare.</p>
+
+      <ul class="why__list">
+        <li class="reveal d2">
+          <span class="why__num">01</span>
+          <div><h3>Small-Batch Craft</h3><p>Made in limited batches so every bar receives proper attention from start to finish.</p></div>
+        </li>
+        <li class="reveal d3">
+          <span class="why__num">02</span>
+          <div><h3>Thoughtful Ingredients</h3><p>A short, considered list — each ingredient selected for the formulation with care.</p></div>
+        </li>
+        <li class="reveal d4">
+          <span class="why__num">03</span>
+          <div><h3>Handcrafted Character</h3><p>Slight variations in tone and texture are the natural signature of something made by hand.</p></div>
+        </li>
+        <li class="reveal d5">
+          <span class="why__num">04</span>
+          <div><h3>Carefully Made</h3><p>From blending to wrapping, each stage is checked and finished with intention.</p></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="why__visual reveal d2">
+      <div class="frame frame--tall" data-parallax="0.05">
+        <img src="Images-jpg/Images/ezgif-frame-150.jpg" alt="Botanical powders, saffron threads and blossoms arranged on a hand-painted surface" loading="lazy">
+      </div>
+      <div class="why__quote">
+        <p>"The small imperfections are the point — proof of the hand behind the bar."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 · HOW IT'S MADE ============ -->
+<section class="craft section section--deep" id="craft">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--light reveal">Our Craft</p>
+      <h2 class="h2 h2--light reveal d1">From Ingredients <em>to Your Hands</em></h2>
+    </div>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <div class="step__img"><img src="Images-jpg/Images/ezgif-frame-050.jpg" alt="Golden oils and ingredient bottles gathered for a new batch" loading="lazy"></div>
+        <span class="step__num">01</span>
+        <h3>Ingredient Selection</h3>
+        <p>Oils, botanicals and saffron are chosen and measured with care.</p>
+      </li>
+      <li class="step reveal d1">
+        <div class="step__img"><img src="Images-jpg/Images/ezgif-frame-100.jpg" alt="Natural oils and botanical powders prepared for blending" loading="lazy"></div>
+        <span class="step__num">02</span>
+        <h3>Blending &amp; Preparation</h3>
+        <p>Ingredients are gently combined into a smooth, even mixture.</p>
+      </li>
+      <li class="step reveal d2">
+        <div class="step__img"><img src="Images-jpg/Images/ezgif-frame-150.jpg" alt="The full handcrafting table with saffron, oils and botanicals" loading="lazy"></div>
+        <span class="step__num">03</span>
+        <h3>Handcrafting</h3>
+        <p>Each batch is poured and shaped by hand — never rushed.</p>
+      </li>
+      <li class="step reveal d3">
+        <div class="step__img"><img src="Images-jpg/Images/ezgif-frame-180.jpg" alt="Marble dish set among ingredients for setting and finishing" loading="lazy"></div>
+        <span class="step__num">04</span>
+        <h3>Setting &amp; Finishing</h3>
+        <p>Bars are left to set properly, then finished and inspected one by one.</p>
+      </li>
+      <li class="step reveal d4">
+        <div class="step__img"><img src="Images-jpg/Images/ezgif-frame-280.jpg" alt="Finished saffron soap bar presented on marble with botanicals" loading="lazy"></div>
+        <span class="step__num">05</span>
+        <h3>Carefully Packed</h3>
+        <p>Wrapped with care and sent off to become part of your ritual.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 07 · BENEFITS ============ -->
+<section class="benefits section">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">What It Offers</p>
+      <h2 class="h2 reveal d1">Simple Care. <em>Beautifully Made.</em></h2>
+    </div>
+
+    <div class="benefits__grid">
+      <div class="benefit reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c3.5 4 6 7.5 6 11a6 6 0 0 1-12 0c0-3.5 2.5-7 6-11z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+        <h3>Gentle Everyday Cleansing</h3>
+        <p>A soft, simple lather for daily hand and body care.</p>
+      </div>
+      <div class="benefit reveal d1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21c0-7 2.5-11 9-14-1.5 9-4.5 13-9 14z"/><path d="M12 21C12 15 9.5 11 3 8c1.5 8 4.5 12 9 13z"/></svg>
+        <h3>Botanical-Inspired Formula</h3>
+        <p>Built around plant-based ingredients and saffron's natural character.</p>
+      </div>
+      <div class="benefit reveal d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>
+        <h3>Handcrafted in Small Batches</h3>
+        <p>Made in limited runs, never mass-produced.</p>
+      </div>
+      <div class="benefit reveal d3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="8" width="16" height="11" rx="2"/><path d="M4 12h16M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <h3>Rich Natural Character</h3>
+        <p>Warm saffron-golden tones with visible botanical texture in every bar.</p>
+      </div>
+      <div class="benefit reveal d4">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 20s-7-4.3-9-8.5C1.5 8 3.5 5 6.5 5c2 0 3.7 1.2 5.5 3.4C13.8 6.2 15.5 5 17.5 5c3 0 5 3 3.5 6.5-2 4.2-9 8.5-9 8.5z"/></svg>
+        <h3>Thoughtfully Selected Ingredients</h3>
+        <p>A short, honest list — each element chosen with purpose.</p>
+      </div>
+      <div class="benefit reveal d5">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4L7.5 16.8l.9-5L4.8 8.3l5-.7L12 3z"/></svg>
+        <h3>Premium Artisan Quality</h3>
+        <p>Finished, checked and wrapped to a standard we're proud of.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 08 · PRODUCT SHOWCASE / SHOP ============ -->
+<section class="shop section section--cream" id="shop">
+  <div class="container shop__grid">
+    <div class="shop__visual reveal">
+      <div class="frame frame--soft">
+        <img src="Images-jpg/Images/ezgif-frame-280.jpg" alt="Handcrafted Saffron Botanical Soap on a marble dish surrounded by saffron threads, oils and botanical powders" loading="lazy">
+      </div>
+      <span class="shop__flag">Small Batch</span>
+    </div>
+
+    <div class="shop__panel">
+      <p class="eyebrow reveal">The Soap</p>
+      <h2 class="h2 reveal d1">Handcrafted Saffron <em>Botanical Soap</em></h2>
+      <p class="body reveal d2">A warm, saffron-golden bar handcrafted in small batches with carefully selected botanical ingredients — a beautifully simple addition to your everyday ritual.</p>
+
+      <div class="shop__rating reveal d2" aria-label="Rated 4.9 out of 5">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span class="shop__rating-text">4.9/5 <small>— placeholder, from verified customers</small></span>
+      </div>
+
+      <div class="shop__price reveal d3">
+        <span class="price">৳450</span><!-- placeholder price — replace with final pricing -->
+        <span class="price-note">per bar · approx. 100g</span>
+      </div>
+
+      <div class="shop__stock reveal d3"><span class="dot"></span>Available — In Stock</div>
+
+      <div class="shop__actions reveal d4">
+        <div class="qty" role="group" aria-label="Quantity">
+          <button id="qtyMinus" aria-label="Decrease quantity">−</button>
+          <span id="qtyValue">1</span>
+          <button id="qtyPlus" aria-label="Increase quantity">+</button>
+        </div>
+        <button class="btn btn--primary btn--wide" id="addToCart">Add to Cart</button>
+      </div>
+      <button class="btn btn--dark btn--wide reveal d4" id="buyNow">Buy Now</button>
+
+      <ul class="shop__assurances reveal d5">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Secure Checkout</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Carefully Packed</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Customer Support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 09 · HOW TO USE ============ -->
+<section class="howto section">
+  <div class="container howto__grid">
+    <div class="howto__visual reveal">
+      <div class="frame frame--arch" data-parallax="0.04">
+        <img src="Images-jpg/Images/ezgif-frame-215.jpg" alt="Hands placing the saffron soap onto a marble dish" loading="lazy">
+      </div>
+    </div>
+    <div class="howto__content">
+      <p class="eyebrow reveal">The Ritual</p>
+      <h2 class="h2 reveal d1">How to Use</h2>
+      <ol class="howto__steps">
+        <li class="reveal d2"><span>01</span><div><h3>Wet</h3><p>Wet the soap and your skin with warm water.</p></div></li>
+        <li class="reveal d3"><span>02</span><div><h3>Lather</h3><p>Work the bar between your hands to create a gentle lather.</p></div></li>
+        <li class="reveal d4"><span>03</span><div><h3>Massage &amp; Rinse</h3><p>Massage onto skin and rinse thoroughly.</p></div></li>
+      </ol>
+      <div class="howto__tip reveal d5">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2a7 7 0 0 1 4 12.7c-.8.6-1.3 1.4-1.5 2.3h-5c-.2-.9-.7-1.7-1.5-2.3A7 7 0 0 1 12 2z"/><path d="M10 20h4M10.8 22h2.4"/></svg>
+        <p><strong>Care tip:</strong> Allow the soap to dry between uses and store it on a draining soap dish.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10 · TESTIMONIALS ============ -->
+<section class="reviews section section--cream" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow reveal">Kind Words</p>
+      <h2 class="h2 reveal d1">Loved By <em>Our Customers</em></h2>
+      <p class="section-head__sub reveal d2">Sample reviews shown for design preview — to be replaced with verified customer feedback.</p>
+    </div>
+
+    <div class="carousel reveal d2">
+      <div class="carousel__track" id="carouselTrack">
+        <article class="t-card">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p>"The bar feels lovely in the hand and the colour is beautiful. It has become a small moment of calm in my morning routine."</p>
+          <footer><strong>Farhana A.</strong><span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Verified Purchase</span></footer>
+        </article>
+        <article class="t-card">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p>"You can tell it's handmade — the texture, the scent, the wrapping. Bought one as a gift and kept one for myself."</p>
+          <footer><strong>Tanvir H.</strong><span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Verified Purchase</span></footer>
+        </article>
+        <article class="t-card">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p>"Gentle, simple and beautifully made. I keep mine on a wooden dish by the sink and it makes the whole bathroom feel warmer."</p>
+          <footer><strong>Nusrat J.</strong><span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Verified Purchase</span></footer>
+        </article>
+        <article class="t-card">
+          <span class="stars" aria-hidden="true">★★★★★</span>
+          <p>"A thoughtful little luxury. The saffron threads visible in the bar make it feel genuinely crafted, not factory-made."</p>
+          <footer><strong>Rafi K.</strong><span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Verified Purchase</span></footer>
+        </article>
+      </div>
+
+      <div class="carousel__nav">
+        <button id="prevReview" aria-label="Previous review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <div class="carousel__dots" id="carouselDots"></div>
+        <button id="nextReview" aria-label="Next review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11 · LIFESTYLE ============ -->
+<section class="lifestyle section">
+  <div class="container lifestyle__grid">
+    <div class="lifestyle__content">
+      <p class="eyebrow reveal">Everyday Ritual</p>
+      <h2 class="h2 reveal d1">From Everyday Routine <em>to Everyday Ritual</em></h2>
+      <p class="lead reveal d2">A quiet morning. Warm water. The warm glow of saffron-gold on a marble dish. Small details that turn a daily habit into a moment worth keeping.</p>
+      <p class="body reveal d3">Place the bar beside a ceramic sink, let it rest on natural stone, and let the ritual take care of itself.</p>
+    </div>
+    <div class="lifestyle__visual reveal d2">
+      <div class="frame frame--soft" data-parallax="0.05">
+        <img src="Images-jpg/Images/ezgif-frame-193.jpg" alt="A calm handcrafted scene with marble dish, saffron threads, oils and white blossoms" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12 · BRAND VALUES ============ -->
+<section class="values section section--texture">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow eyebrow--light reveal">Our Promise</p>
+      <h2 class="h2 h2--light reveal d1">Made With <em>Intention.</em></h2>
+    </div>
+    <div class="values__grid">
+      <div class="value reveal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M7 11V7a5 5 0 0 1 10 0v4"/><path d="M5 11h14l-1 9a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2l-1-9z"/></svg>
+        <h3>Thoughtful Craft</h3><p>Every batch is poured, set and finished by hand, with time to do it properly.</p>
+      </div>
+      <div class="value reveal d1">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        <h3>Ingredient Transparency</h3><p>A short, honest ingredient list — clearly shared, nothing hidden.</p>
+      </div>
+      <div class="value reveal d2">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="8" width="16" height="11" rx="2"/><path d="M4 12h16M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+        <h3>Small-Batch Quality</h3><p>Limited batches let us focus on consistency, care and finish.</p>
+      </div>
+      <div class="value reveal d3">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21c0-7 2.5-11 9-14-1.5 9-4.5 13-9 14z"/><path d="M12 21C12 15 9.5 11 3 8c1.5 8 4.5 12 9 13z"/></svg>
+        <h3>Responsible Packaging</h3><p>Wrapped simply and carefully, with minimal, thoughtful materials.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13 · FAQ ============ -->
+<section class="faq section" id="faq">
+  <div class="container faq__grid">
+    <div class="faq__intro">
+      <p class="eyebrow reveal">Good to Know</p>
+      <h2 class="h2 reveal d1">Questions, <em>Answered</em></h2>
+      <p class="body reveal d2">Everything you might want to know before the bar reaches your hands. Still curious? We're happy to help.</p>
+    </div>
+
+    <div class="faq__list reveal d2">
+      <details class="faq__item">
+        <summary>What ingredients are used?<span class="faq__icon"></span></summary>
+        <p>Each bar is made with natural oils, saffron and carefully selected plant-based botanical ingredients. The full list is printed on the packaging.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Is this soap suitable for my skin type?<span class="faq__icon"></span></summary>
+        <p>The bar is formulated for gentle everyday cleansing. If you have specific skin concerns or sensitivities, we recommend checking the ingredient list or doing a small patch test first.</p>
+      </details>
+      <details class="faq__item">
+        <summary>How should I store the soap?<span class="faq__icon"></span></summary>
+        <p>Keep it on a draining soap dish and let it dry between uses. Avoid leaving it in direct streams of water.</p>
+      </details>
+      <details class="faq__item">
+        <summary>How long does one bar typically last?<span class="faq__icon"></span></summary>
+        <p>With proper dry storage between uses, a single bar typically lasts several weeks of daily use. Handmade bars appreciate good drainage.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Is the soap handmade?<span class="faq__icon"></span></summary>
+        <p>Yes — every bar is handcrafted in small batches, which is why each one carries its own subtle character.</p>
+      </details>
+      <details class="faq__item">
+        <summary>How is the soap packaged?<span class="faq__icon"></span></summary>
+        <p>Bars are wrapped carefully in minimal, thoughtful packaging designed to protect the soap and reduce waste.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Where do you deliver?<span class="faq__icon"></span></summary>
+        <p>We currently deliver across Bangladesh. Delivery times and charges are confirmed at checkout.</p>
+      </details>
+      <details class="faq__item">
+        <summary>What is your return/replacement policy?<span class="faq__icon"></span></summary>
+        <p>If your order arrives damaged or there's an issue with your bar, contact our support team and we'll arrange a replacement or refund.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14 · FINAL CTA ============ -->
+<section class="final">
+  <div class="final__bg" aria-hidden="true"><img src="Images-jpg/Images/ezgif-frame-001.jpg" alt="" loading="lazy"></div>
+  <div class="container final__content">
+    <p class="eyebrow eyebrow--light reveal">Your Ritual Awaits</p>
+    <h2 class="final__title reveal d1">Bring a Little More Nature <em>Into Your Everyday Ritual.</em></h2>
+    <p class="final__sub reveal d2">Discover the simple pleasure of thoughtfully handcrafted soap.</p>
+    <div class="final__cta reveal d3">
+      <a href="#shop" class="btn btn--primary btn--lg">Shop Now</a>
+      <a href="#craft" class="btn btn--outline-light">Learn More About Our Craft</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15 · FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#hero" class="nav__logo">
+        <svg viewBox="0 0 32 32" class="nav__logo-mark" aria-hidden="true"><rect width="32" height="32" rx="9" fill="var(--saffron)"/><path d="M16 24c0-6 2-10 8-13-1 7-3 11-8 13zm0 0c0-6-2-10-8-13 1 7 3 11 8 13z" fill="var(--ivory)"/></svg>
+        <span>Kesar<em> Botanicals</em></span>
+      </a>
+      <p>Handcrafted by nature. Made with intention. Created for your everyday ritual.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 8h2.5V4.5H14A4.5 4.5 0 0 0 9.5 9v2.5H7V15h2.5v6H13v-6h2.5l.5-3.5h-3V9a1 1 0 0 1 1-1z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.5"/><circle cx="16.8" cy="7.2" r=".8" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4a8 8 0 0 0-6.9 12L4 20l4.2-1A8 8 0 1 0 12 4z"/><path d="M9.3 9.5c.3 2.5 2.7 4.9 5.2 5.2l1-1.2-1.8-.9-.8.6a5.3 5.3 0 0 1-2.1-2.1l.6-.8-.9-1.8-1.2 1z"/></svg></a>
+      </div>
+    </div>
+
+    <nav class="footer__col" aria-label="Footer">
+      <h4>Explore</h4>
+      <a href="#hero">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#shop">Shop</a>
+      <a href="#craft">How It's Made</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <nav class="footer__col" aria-label="Customer care">
+      <h4>Customer Care</h4>
+      <a href="#">Shipping</a>
+      <a href="#">Returns</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Conditions</a>
+    </nav>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="tel:+8801XXXXXXXXX">+880 1XXX-XXXXXX</a>
+      <a href="mailto:hello@kesarbotanicals.com">hello@kesarbotanicals.com</a>
+      <address>Dhaka, Bangladesh</address>
+    </div>
+
+    <div class="footer__news">
+      <h4>Join our botanical journal.</h4>
+      <p>Occasional notes on craft, ingredients and new small batches.</p>
+      <form id="newsForm" class="footer__form">
+        <input type="email" placeholder="Your email address" required aria-label="Email address">
+        <button type="submit" class="btn btn--primary btn--sm">Subscribe</button>
+      </form>
+      <p class="footer__form-msg" id="newsMsg" hidden>Thank you — you're on the list. 🌿</p>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© 2026 Kesar Botanicals. Handcrafted with care in Bangladesh.</p>
+    <p class="footer__note">Product imagery is of the actual handcrafted soap.</p>
+  </div>
+</footer>
+
+<!-- ============ MOBILE STICKY CTA ============ -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta__info">
+    <strong>Saffron Botanical Soap</strong>
+    <span>৳450 · In Stock</span>
+  </div>
+  <a href="#shop" class="btn btn--primary btn--sm">Shop Now</a>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
