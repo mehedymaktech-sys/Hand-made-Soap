@@ -6,6 +6,13 @@ Desktop.ini
 # Temp/check files
 gitcheck.txt
 nodecheck.txt
+gitlog.txt
+pushlog.txt
+pushcheck.txt
+pushresult.txt
+pushstate.txt
+procstate.txt
+finalpush.txt
 
 # Editor
 .vscode/
